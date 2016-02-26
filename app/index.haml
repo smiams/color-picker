@@ -4,10 +4,18 @@
     %meta{charset: "utf8"}
     %meta{name: "viewport", content:"width=device-width"}
 
-    %link{rel: "stylesheet", media: "screen", href: "./css/v2/application.css"}
     %title
       Color Picker
 
-  %body
+  %body{"data-ng-app" => "ColorPickerApp"}
     %h1
-      Ahoy sailor! This is the color picker.
+      Ahoy sailor!
+
+    %color-picker
+
+  // In a production-level application, these javascript assets would be concatenated, minified, and served using something like Browserify and require.
+  %script{src: "./js/jquery.min.js"}
+  %script{src: "./js/angular.min.js"}
+  %script{src: "./js/angular-route.min.js"}
+  %script{src: "./js/color-picker-app.js"}
+  %script{src: "./js/color-picker-directive.js"}

@@ -1,0 +1,2 @@
+excludeInFolderSearch = "{$excludeInFolderSearch,$extraExcludes,node_modules,build,package.json}"
+excludeInFileChooser = "{$excludeInFolderSearch,$extraExcludes,node_modules,bower_components,build,package.json}"

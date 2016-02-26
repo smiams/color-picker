@@ -11,14 +11,14 @@ ColorPickerApp.directive("colorPicker", ["Settings", function(Settings) {
 
       jqInput.keyup(function(event) {
         if (event.target.value.length === 0) {
-          jqValue.attr("style", "background-color: " + scope.initialColor + ";");
+          jqValue.attr("style", "background-color: " + scope.initialColor.hex + ";");
         }
         else {
           jqValue.attr("style", "background-color: " + event.target.value + ";");
         }
       });
 
-      jqValue.attr("style", "background-color: " + scope.initialColor + ";");
+      jqValue.attr("style", "background-color: " + scope.initialColor.hex + ";");
     },
 
     templateUrl: "/html/partials/color-picker.html"

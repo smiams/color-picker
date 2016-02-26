@@ -1,5 +1,5 @@
 var ColorPickerApp = angular.module("ColorPickerApp", ["ngRoute"])
 
 .constant("Settings", {
-  initialColor: "#000000",
+  initialColor: {hex: "#000000", name: "Black"},
 });

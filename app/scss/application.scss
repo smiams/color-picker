@@ -1,0 +1,33 @@
+.color-picker {
+  background-color: red;
+
+  #color-selection, #color-value-container {
+    border: 1px solid #424242;
+    border-radius: 3px;
+    float: left;
+    height: 40px;
+  }
+
+  #color-selection {
+    font-weight: 300;
+    font-size: .8rem;
+    width: 17em;
+    padding: 3px 5px 3px 5px;
+  }
+
+  #color-value-container {
+    margin-left: 10px;
+    padding: 3px;
+    width: 100px;
+
+    #color-value {
+      border-radius: 3px;
+      height: 40px;
+      width: 100px;
+    }
+  }
+
+  #color-value:after {
+    clear: both;
+  };
+}
